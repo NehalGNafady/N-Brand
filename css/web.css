@@ -1,0 +1,162 @@
+/*start global*/
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body{}
+
+.container {width: 1200px; margin: auto}
+
+ul{list-style: none; padding: 0; margin: 0; }
+
+h2,h3,h4 {font-weight: normal}
+
+.navbar .brand, .navbar .links , .services .item , .services .item .info, .our-team .box , .our-projects .gallery .row > div,
+.footer .col, .footer .recent div img, .services .item i{float: left;}
+
+.navbar, .navbar .links li a, .header .overlay, .testim .t-overlay, .our-projects .gallery .row > div .heart, .footer .col h2,
+.our-projects .gallery .row > div .over, .our-projects ul li.selected, .our-team .box:not(first-child) .overlay{color:#fff}
+
+.header .bx-wrapper, .header .bxslider,.testim .t-overlay, .our-team .box:not(first-child) .overlay ,
+.our-projects .gallery .row > div .over{height: 100%}
+
+.our-team .box:not(:first-child) img, .header .overlay, .testim .t-overlay ,.our-projects .gallery .row > div .over, 
+.our-team .box:not(first-child) .overlay{width: 100%}
+
+.navbar .links li, .our-projects ul li, .footer .col i, .footer .tags span{display: inline-block}
+
+.header .bxslider li, .our-team .box:not(first-child):hover .overlay ,.testim q, .testim .slider .active,
+.special-heading:after, .our-projects .gallery .row > div:hover .over, .our-projects .gallery .row > div:hover .heart {display: block; }
+
+.navbar .brand,.navbar .links {width: 50%;}
+
+.header .bxslider li h2 span, .navbar .links li.active a, .navbar .links li a:hover, .services .item i, .testim p {color:#aa206b }
+
+.navbar , .header, .services, .our-team, .testim, .our-projects, .footer {min-width: 1200px}
+/*end global*/
+
+/*start navbar*/
+.navbar {background-color: #eee; height: 0;  position: relative; z-index: 2; font-size: 18px}
+
+.navbar .brand { text-transform: uppercase; margin-top: 10px}
+
+.navbar .links {  margin-top: 25px}
+
+.navbar .links li { padding: 10px px; margin: 0 10px; border-bottom: 2px solid transparent; font-weight: bold}
+
+.navbar .links li a { text-decoration: none}
+
+.navbar .links li.active , .navbar .links li :hover{border-bottom:2px solid #aa206b ;}
+/*end navbar*/
+
+/*start header*/
+.header{background: url('../images/header0.jpg'); position: relative}
+
+.header .overlay {background-color: rgba(0,0,0,.7); position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: 1}
+
+.header .bx-wrapper .bx-viewport{ box-shadow: none; border: 0; background: none; height: 100% !important; text-align: center}
+
+.header .bxslider li h2{font-size:60px; margin-bottom: 20px; margin-top: 0 ;font-weight: bold}
+/*end header*/
+
+/*start services*/
+.services { padding: 80px 20px 40px}
+
+.services h2{margin: 0 0 50px; }
+
+.services .item { width: 33.33333% ; margin-bottom: 20px}
+
+.services .item i { width: 20%; margin-right: 5%; margin-top: 15px}
+
+.services .item .info { width: 75%}
+
+.services .item .info h3{ color: #585353; margin-bottom: 15px}
+
+.services .item .info p {margin-top: 0; color: #888}
+/*end our team*/
+
+/*start our team*/
+.our-team {padding: 40px 20px}
+
+.our-team .box:first-child{width: 35%}
+
+.our-team .box p{color:#888; line-height: 1.5; font-size: 14px}
+
+.our-team .box:not(:first-child){width: 15.25%; margin-left: 1%; position: relative; transition: all 1s ease-in-out; }
+
+.our-team .box:not(first-child) .overlay { position: absolute; top: 0; left: 0; bottom: 0; right: 0;  line-height: 183px;
+    font-size: 20px; font-weight: bold; text-align: center; background-color: #aa206b; display: none; opacity: .7}
+
+/*end our team*/
+
+/*start testimonials*/
+.testim{ background: url('../images/clients.jpg'); -webkit-background-size: cover; -moz-background-size: cover;
+    -o-background-size: cover; background-size: cover; height: 400px; position: relative; text-align: center; padding: 80px 0}
+
+.testim .t-overlay {position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.7)}
+
+.testim h2{font-size: 40px; margin: 80px 0 10px}
+
+.testim q {font-size: 20px; line-height: 2; color: #d0d0d0; margin-top: 60px }
+
+.testim p {font-size: 30px;  }
+
+.testim .slider > div { display: none}
+/*end testimonials*/
+
+/*start projects*/
+.our-projects{padding: 60px 0; }
+
+.our-projects ul {margin-top: 50px}
+
+.our-projects ul li { border: 1px solid #ccc; padding: 10px; border-radius: 5px; margin-right: 5px}
+
+.our-projects ul li.selected {background-color: #aa206b; border: 2px solid #aa206b; }
+
+.our-projects .gallery {margin-top: 50px; overflow: hidden}
+
+.our-projects .gallery .row > div:nth-child(2) {  margin-right: 1%; margin-left: 1%}
+
+.our-projects .gallery .row > div  {width: 32.66666; margin-bottom: 12px; position: relative;background-color: #ddd;}
+
+.our-projects .gallery .row > div .over {position: absolute; left: 0; top: 0; right: 0; bottom: 0;  line-height: 232px;
+    font-size: 20px; font-weight: bold; text-align: center; background-color: rgba(0,0,0,.7); display: none}
+
+.our-projects .gallery .row > div .heart {position: absolute; bottom: 20px; right: 20px;  display: none}
+
+.our-projects .shuffle li{cursor: pointer}
+
+.our-projects .mix{display: none}
+/*end projects*/
+
+/*start footer*/
+.footer{background-color: #232323; color: #6c6c6c; padding: 40px 0; overflow: hidden}
+
+.footer .col {width: 25%; }
+
+.footer .col h2{ font-size: 18px;}
+
+.footer .col p{margin-bottom: 30px; line-height: 1.6}
+
+.footer .col i { color: #979797; border: 1px solid #979797; width: 40px; padding: 10px;}
+
+.footer .tags span{ color: #ccc; border: 1px solid #979797; padding: 10px; margin-right: 5px; margin-bottom: 10px}
+
+.footer .recent div{overflow: hidden; margin-bottom: 15px}
+
+.footer .recent div img { margin-right: 10px}
+
+.footer .recent div h4{margin: 6px 0; color: #ccc; }
+
+.footer .blog ul li { padding: 15px; border-bottom: 1px solid #979797; color: #ccc }
+
+.footer .copyright{margin-top: 30px}
+/*end  footer*/
+
+/*start my framewok*/
+.clearfix {clear: both}
+
+.special-heading{position: relative}
+
+.special-heading:after {content: "";  position: absolute; top: 40px; left: 0; width: 40px; border-bottom: 2px solid #333; }
+
+.separator{border: 1px solid #eee}
+/*end my framewok*/
